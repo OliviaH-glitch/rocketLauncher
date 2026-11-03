@@ -45,6 +45,12 @@ function getUpcomingLaunches(callback) {
 function populateDropdown(launches) {
   // TODO: Iterate and append <option> elements
   console.log(launches)
+  for(i=0; i < launches.length; i++){
+    const op = document.createElement("option")
+    op.textContent = launches.name;
+    op.value = launches.id;
+
+  }
 }
 
 // Step 3: Add event listener to #launchDropdown
